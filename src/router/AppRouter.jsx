@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
+
 import { Routes, Route, Navigate } from "react-router-dom";
 import { DashBoardRoutes } from "../dashboard/routes/DashBoardRoutes";
 import { AuthRoutes } from "../auth/routes/AuthRoutes";
+import MyContext from "../context/MyContext";
 
 export const AppRouter = () => {
-  const status = false;
+  const { isLogged } = useContext(MyContext);
 
   return (
     <Routes>
-      {status ? (
+      {isLogged === "login" ? (
         <Route path="/*" element={<DashBoardRoutes />} />
       ) : (
         <Route path="/auth/*" element={<AuthRoutes />} />
