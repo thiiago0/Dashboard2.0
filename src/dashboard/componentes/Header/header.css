@@ -1,0 +1,33 @@
+.contenedor {
+  height: 40px;
+  width: 80%;
+  position: fixed;
+  top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.13);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(101, 95, 156, 0.6);
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+  z-index: 1;
+}
+
+.item-container {
+  display: flex;
+  gap: 20px;
+}
+
+.item-container li {
+  list-style: none;
+}
+
+.item-container li a {
+  text-decoration: none;
+  color: white;
+}

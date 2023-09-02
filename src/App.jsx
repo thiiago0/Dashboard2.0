@@ -1,7 +1,12 @@
 import { AppRouter } from "./router/AppRouter";
 
 function App() {
-  return <AppRouter />;
+  return (
+    <>
+      {/* <Header menuOptions={options} /> */}
+      <AppRouter />;
+    </>
+  );
 }
 
 export default App;
