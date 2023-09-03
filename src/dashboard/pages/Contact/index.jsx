@@ -1,85 +1,39 @@
-import React, { useState } from "react";
+import "./contact.css";
+import facebook from "../../../assets/facebook.png";
+import instagram from "../../../assets/instagram.png";
+import whatssap from "../../../assets/whatsapp.png";
+// import { useWhatss } from "../hook/useWhatss";
 
 export const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [tel, setTel] = useState("");
-  const [text, setText] = useState("");
-
-  const handleChangeinput = (setState) => (e) => {
-    setState(e.target.value);
-  };
-
-  const handleClickEnviar = () => {
-    let objContact = {
-      name,
-      email,
-      tel,
-      text,
-    };
-
-    console.log("objContact: ", objContact);
-  };
-
+  // const handleWhatsAppClick = useWhatss();
   return (
     <div className="background-contacto">
-      <form>
-        <div className="primer">
-          <label htmlFor="Nombre">Nombre</label>
-          <input
-            onChange={handleChangeinput(setName)}
-            required
-            type="text"
-            name="Nombre"
-            id="Nombre"
-            value={name}
-          />
+      <h2 className="contacto">Contactos</h2>
+      <h3 className="redes">Mis redes sociales son:</h3>
+      <div className="social-media">
+        <div className="facebook">
+          <a href="https://www.facebook.com/santhiago.osorno/" target="_blank">
+            <img className="facebook-1" src={facebook} alt="" />
+          </a>
         </div>
-        <div className="email">
-          <label htmlFor="Correo">Correo</label>
-          <input
-            onChange={handleChangeinput(setEmail)}
-            required
-            type="email"
-            name="Correo"
-            id="Correo"
-            value={email}
-          />
+        <div className="instagram">
+          <a href="https://www.instagram.com/santhiiagoo10/" target="_blank">
+            <img className="instagram-1" src={instagram} alt="" />
+          </a>
         </div>
-        <div className="phone">
-          <label htmlFor="Telefono">Telefono</label>
-          <input
-            onChange={handleChangeinput(setTel)}
-            required
-            type="tel"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            maxLength={10}
-            name="Telefono"
-            id="Telefono"
-            value={tel}
-          />
+        <div className="whatssap">
+          <a href="https://wa.me/15167102617" target="_blank">
+            <img className="whatssap-1" src={whatssap} alt="" />
+          </a>
+          {/* <img
+          className="whatssap-1"
+          id="whatsappImage"
+          src={whatssap}
+          alt="Enlace a WhatsApp"
+          onClick={handleWhatsAppClick}
+        /> */}
         </div>
-
-        <div className="description">
-          <label htmlFor="Description">Descripción</label>
-          <textarea
-            onChange={handleChangeinput(setText)}
-            required
-            type="text"
-            name="description"
-            id="Description"
-            value={text}
-          />
-        </div>
-
-        <button
-          className="btn-contact"
-          onClick={handleClickEnviar}
-          type="button"
-        >
-          Enviar
-        </button>
-      </form>
+      </div>
     </div>
   );
 };

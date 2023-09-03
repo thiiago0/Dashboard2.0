@@ -1,0 +1,44 @@
+.background-contacto {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.13);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(101, 95, 156, 0.6);
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.contacto {
+  color: #f09819;
+  text-align: center;
+  font-size: 34px;
+}
+.redes {
+  color: white;
+}
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.facebook-1 {
+  width: 180px;
+  height: 100px;
+}
+
+.instagram-1 {
+  width: 100px;
+  height: 100px;
+}
+.whatssap-1 {
+  width: 335px;
+  height: 130px;
+  margin-top: -20px;
+}

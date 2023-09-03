@@ -1,0 +1,44 @@
+.container-about {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.13);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(101, 95, 156, 0.6);
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+}
+
+.mine {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+.name-about {
+  color: #f09819;
+  font-size: 34px;
+  text-align: center;
+}
+
+.subtitulo {
+  color: white;
+  box-sizing: border-box;
+}
+
+.about-me {
+  box-sizing: border-box;
+  color: white;
+  letter-spacing: 0.5;
+  text-align: center;
+  padding: 10px;
+  text-align: justify;
+}

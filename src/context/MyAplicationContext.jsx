@@ -7,6 +7,7 @@ export const MyAplicationContext = ({ children }) => {
   let options = [
     { id: 1, nombre: "Home", enlace: "/" },
     { id: 2, nombre: "Contact", enlace: "/contact" },
+    { id: 3, nombre: "About", enlace: "/about" },
   ];
 
   return (

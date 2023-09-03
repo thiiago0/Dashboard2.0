@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { Home, Contact } from "../pages";
+import { Home, Contact, About } from "../pages";
 import { Layout } from "../layout";
 
 export const DashBoardRoutes = () => {
@@ -9,6 +9,7 @@ export const DashBoardRoutes = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </Layout>
   );

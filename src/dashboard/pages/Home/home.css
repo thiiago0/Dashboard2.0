@@ -1,4 +1,5 @@
 .container-home {
+  box-sizing: border-box;
   height: 100%;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.13);
@@ -6,6 +7,12 @@
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 40px rgba(101, 95, 156, 0.6);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  font-family: "Poppins", sans-serif;
 }
 
 .container-home * {
@@ -16,8 +23,17 @@
   border: none;
 }
 
-.btn-logout {
+.descripcion {
   width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.btn-logout {
+  width: 70%;
   background-color: #ffffff;
   color: #080710;
   padding: 15px 0;
@@ -27,6 +43,37 @@
   cursor: pointer;
 }
 
+.column-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 2px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.tecno {
+  width: 200px;
+  text-align: justify;
+}
+
+.tittle-home {
+  color: #f09819;
+  text-align: center;
+  font-size: 34px;
+}
+.tecno p {
+  font-size: 12px;
+}
+
+.tecno-tittle {
+  color: #f09819;
+}
+.logo {
+  width: 56px;
+  height: 56px;
+}
 /* @media (max-width: 650px) {
   .container-home {
     width: 90%;
