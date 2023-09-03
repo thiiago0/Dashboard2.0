@@ -63,6 +63,7 @@ export const Home = () => {
         className="btn-logout"
         onClick={() => {
           setIsLogged("logout");
+          localStorage.setItem("isLogged", false);
           navigate("/auth/login");
         }}
         type="button"

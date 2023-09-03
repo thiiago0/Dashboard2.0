@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import MyContext from "./MyContext";
 
 export const MyAplicationContext = ({ children }) => {
-  const [isLogged, setIsLogged] = useState("logout");
+  const logInfromStorage = localStorage.getItem("isLogged");
+  const [isLogged, setIsLogged] = useState(logInfromStorage);
 
   let options = [
     { id: 1, nombre: "Home", enlace: "/" },

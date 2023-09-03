@@ -1,0 +1,13 @@
+.logout-container {
+  position: absolute;
+  width: 100px;
+  height: 60px;
+  margin-right: -25px;
+  right: 0;
+  top: 20px;
+}
+
+.btn-logout {
+  background: #b63030 !important ;
+  color: white;
+}

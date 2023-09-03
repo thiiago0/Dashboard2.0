@@ -12,7 +12,8 @@ export const Login = () => {
 
   const { setIsLogged } = useContext(MyContext);
   const handleClickLogin = () => {
-    setIsLogged("login");
+    localStorage.setItem("isLogged", true);
+    setIsLogged(true);
     navigate("/");
   };
 

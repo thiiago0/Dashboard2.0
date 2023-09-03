@@ -21,6 +21,8 @@
 .item-container {
   display: flex;
   gap: 20px;
+  flex-direction: row;
+  align-items: center;
 }
 
 .item-container li {
@@ -30,4 +32,10 @@
 .item-container li a {
   text-decoration: none;
   color: white;
+}
+.bi-person-check {
+  color: white;
+}
+.active {
+  cursor: pointer;
 }

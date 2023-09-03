@@ -10,7 +10,7 @@ export const AppRouter = () => {
 
   return (
     <Routes>
-      {isLogged === "login" ? (
+      {isLogged ? (
         <Route path="/*" element={<DashBoardRoutes />} />
       ) : (
         <Route path="/auth/*" element={<AuthRoutes />} />
