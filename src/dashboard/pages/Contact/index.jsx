@@ -11,17 +11,17 @@ export const Contact = () => {
       <div className="social-media">
         <div className="facebook">
           <a href="https://www.facebook.com/santhiago.osorno/" target="_blank">
-            <img className="social-media-img" src={facebook} alt="" />
+            <img className="social-media-img" src={facebook} alt="facebook" />
           </a>
         </div>
         <div className="instagram">
           <a href="https://www.instagram.com/santhiiagoo10/" target="_blank">
-            <img className="social-media-img" src={instagram} alt="" />
+            <img className="social-media-img" src={instagram} alt="instagram" />
           </a>
         </div>
         <div className="whatssap">
           <a href="https://wa.me/15167102617" target="_blank">
-            <img className="social-media-img" src={whatssap} alt="" />
+            <img className="social-media-img" src={whatssap} alt="whastapp" />
           </a>
         </div>
       </div>
