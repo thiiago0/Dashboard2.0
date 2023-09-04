@@ -1,7 +1,7 @@
 import "./contact.css";
+import whatsapp from "../../../assets/whatsapp.png";
 import facebook from "../../../assets/facebook.png";
 import instagram from "../../../assets/instagram.png";
-import whatssap from "../../../assets/whatsapp.png";
 
 export const Contact = () => {
   return (
@@ -19,9 +19,9 @@ export const Contact = () => {
             <img className="social-media-img" src={instagram} alt="instagram" />
           </a>
         </div>
-        <div className="whatssap">
+        <div className="whatsapp">
           <a href="https://wa.me/15167102617" target="_blank">
-            <img className="social-media-img" src={whatssap} alt="whastapp" />
+            <img className="social-media-img" src={whatsapp} alt="whastapp" />
           </a>
         </div>
       </div>
