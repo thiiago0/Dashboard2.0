@@ -1,5 +1,5 @@
 import "./contact.css";
-import whatsapp from "../../../assets/whatsapp.png";
+import whatsapp from "../../../assets/Whatsapp.png";
 import facebook from "../../../assets/facebook.png";
 import instagram from "../../../assets/instagram.png";
 
