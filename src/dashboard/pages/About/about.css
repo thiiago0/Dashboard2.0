@@ -49,8 +49,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  /* Estilos específicos para teléfonos móviles */
-  /* Aquí puedes definir reglas de estilo CSS que se aplicarán cuando el ancho de la pantalla sea igual o menor a 768px */
   .container-about {
     box-sizing: border-box;
     padding-top: 500px;
