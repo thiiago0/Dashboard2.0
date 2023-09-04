@@ -25,20 +25,22 @@
 }
 .social-media {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.facebook-1 {
-  width: 180px;
-  height: 100px;
+  flex-direction: row;
+  gap: 20px;
 }
 
-.instagram-1 {
-  width: 100px;
-  height: 100px;
+.social-media-img {
+  width: 150px;
+  height: 150px;
 }
-.whatssap-1 {
-  width: 335px;
-  height: 130px;
-  margin-top: -20px;
+
+@media only screen and (max-width: 768px) {
+  /* Estilos específicos para teléfonos móviles */
+  /* Aquí puedes definir reglas de estilo CSS que se aplicarán cuando el ancho de la pantalla sea igual o menor a 768px */
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: auto;
+  }
 }

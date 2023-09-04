@@ -1,21 +1,16 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./loginStyle.css";
 import { useFormLogin } from "../hooks/useFormLogin";
-import MyContext from "../../../context/MyContext";
-import { useNavigate } from "react-router-dom";
 
 export const Login = () => {
-  const { email, password, handleChangeInput, setEmail, setPassword } =
-    useFormLogin();
-
-  const navigate = useNavigate();
-
-  const { setIsLogged } = useContext(MyContext);
-  const handleClickLogin = () => {
-    localStorage.setItem("isLogged", true);
-    setIsLogged(true);
-    navigate("/");
-  };
+  const {
+    email,
+    password,
+    handleChangeInput,
+    handleLogin,
+    setEmail,
+    setPassword,
+  } = useFormLogin();
 
   return (
     <>
@@ -23,13 +18,13 @@ export const Login = () => {
         <div className="shape"></div>
         <div className="shape"></div>
       </div>
-      <form>
+      <form onSubmit={handleLogin}>
         <h3>Login Here</h3>
 
         <label htmlFor="username">User Name</label>
         <input
           type="email"
-          placeholder="Email or Phone"
+          placeholder="Email"
           id="username"
           value={email}
           onChange={handleChangeInput(setEmail)}
@@ -46,10 +41,7 @@ export const Login = () => {
           minLength={8}
           required
         />
-
-        <button type="button" onClick={handleClickLogin}>
-          Log In
-        </button>
+        <button type="submit">Log In</button>
         <div className="social">
           <div className="go">
             <i className="fab fa-google"></i> Google

@@ -5,7 +5,7 @@ import "./about.css";
 export const About = () => {
   return (
     <section className="container-about">
-      <div>
+      <div className="container-mine-img">
         <img className="mine" src={persona} alt="me" />
       </div>
       <h2 className="name-about">Santiago Osorno</h2>

@@ -5,9 +5,13 @@
   margin-right: -25px;
   right: 0;
   top: 20px;
+  z-index: -1;
 }
 
 .btn-logout {
+  position: absolute;
   background: #b63030 !important ;
   color: white;
+  z-index: 2;
+  box-shadow: 0 0 40px 10px rgba(210, 36, 13, 0.6);
 }

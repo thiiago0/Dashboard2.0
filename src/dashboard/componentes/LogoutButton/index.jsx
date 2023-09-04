@@ -12,7 +12,7 @@ export const LogoutButton = () => {
           width="40"
           height="40"
           fill="currentColor"
-          class="bi bi-person-fill-dash"
+          className="bi bi-person-fill-dash"
           viewBox="0 0 16 16"
         >
           <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7ZM11 12h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1Zm0-7a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />

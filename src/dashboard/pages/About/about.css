@@ -17,10 +17,15 @@
   padding: 10px;
 }
 
+.container-mine-img {
+  display: block;
+}
+
 .mine {
   width: 180px;
   height: 180px;
   border-radius: 50%;
+  box-shadow: 0 0 40px rgba(101, 95, 156, 0.6);
 }
 
 .name-about {
@@ -41,4 +46,25 @@
   text-align: center;
   padding: 10px;
   text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Estilos específicos para teléfonos móviles */
+  /* Aquí puedes definir reglas de estilo CSS que se aplicarán cuando el ancho de la pantalla sea igual o menor a 768px */
+  .container-about {
+    box-sizing: border-box;
+    padding-top: 500px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .container-mine-img {
+    display: block;
+  }
+  .mine {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px rgba(101, 95, 156, 0.6);
+  }
 }
